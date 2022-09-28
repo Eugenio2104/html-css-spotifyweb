@@ -4,12 +4,15 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+/*utilities*/
+.d-flex{
+  display: flex;
+}
 
 header{
   background-color: rgb(0,0,0,.9);
   height: 100px;
   width: calc(100vw - 200px);
-  display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-left: 200px;
@@ -17,6 +20,19 @@ header{
   z-index: 1;
   top: 0;
   right: 0;
+}
+
+main{
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+  background-color: #141922;
+}
+
+
+main .parte-sinistra{
+  height: calc(100vh - 80px);
+  background-color: black;
+  width: 200px;
 }
 
 .header-button{
@@ -28,3 +44,10 @@ header{
   border: 2px solid white;
   margin-right: 15px;
 }
+
+footer{
+  height: 80px;
+  background-color: #282828;
+  color: white;
+}
+
