@@ -10,7 +10,7 @@
 }
 
 header{
-  background-color: rgb(0,0,0,.9);
+  background-color: rgb(0,0,0,.3);
   height: 100px;
   width: calc(100vw - 200px);
   justify-content: flex-end;
@@ -32,7 +32,8 @@ main{
 main .parte-sinistra{
   height: calc(100vh - 80px);
   background-color: black;
-  width: 200px;
+  width: 200px; 
+  overflow: hidden;
 }
 
 .header-button{
@@ -48,6 +49,10 @@ main .parte-sinistra{
 footer{
   height: 80px;
   background-color: #282828;
+  color: white;
+}
+
+img{
   color: white;
 }
 
