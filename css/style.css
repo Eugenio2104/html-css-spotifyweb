@@ -94,7 +94,11 @@ section{
   margin: 20px;
 }
 
+.recently{
+  margin: 15px;
+}
 
-.box{
+.box {
   width: calc(100% / 6);
+  margin: 15px;
 }
