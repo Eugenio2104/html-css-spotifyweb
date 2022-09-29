@@ -26,6 +26,7 @@ main{
   height: calc(100vh - 80px);
   overflow-y: auto;
   background-color: #141922;
+  display: flex;
 }
 
 
@@ -36,8 +37,6 @@ main .parte-sinistra{
   overflow: hidden;
   color: white;
   display: flex;
-  flex-direction: row;
-  
 }
 
 .header-button{
@@ -70,4 +69,23 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+
+section{
+  width: calc(100% - 200px);
+}
+.top-list {
+  margin-top: 90px;
+}
+
+.top-list ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.top-list ul li{
+  margin: 20px;
 }
