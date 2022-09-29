@@ -66,6 +66,8 @@ footer{
   flex-direction: column;
 }
 
-.profile{
-  align-self: flex-end;
+.playlist{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
