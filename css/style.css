@@ -9,6 +9,10 @@
   display: flex;
 }
 
+img{
+  max-width: 100%;
+}
+
 header{
   background-color: rgb(0,0,0,.3);
   height: 100px;
@@ -88,4 +92,9 @@ section{
 
 .top-list ul li{
   margin: 20px;
+}
+
+
+.box{
+  width: calc(100% / 6);
 }
