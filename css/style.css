@@ -92,6 +92,7 @@ main > section{
   width: 100%;
   padding: 10px;
   flex-wrap: wrap;
+  overflow-x: hidden;
 }
 
 .top-list ul li{
@@ -108,8 +109,6 @@ main > section{
 .top-list ul li a:hover{
   color: #ffffff;
   border-bottom: 2px solid #B2FF2F;
-
-
 }
 
 
@@ -117,8 +116,12 @@ main > section{
   margin: 15px;
 }
 
+.row {
+  flex-wrap: wrap;
+}
+
 .box {
-  width: calc(100% / 6);
+  width: calc(100% / 6 - 30px);
   margin: 15px;
 }
 
@@ -172,5 +175,24 @@ main > section{
 }
 
 .crea-playlist ul{
+  height: calc(100vh - 350px);
   overflow-y: auto;
+}
+
+
+/*media query*/
+
+@media screen and (max-width:768px) {
+   .box{
+    width: calc(100% / 4 - 30px);
+  }
+}
+
+
+
+
+@media screen and (max-width:480px) {
+  .box{
+   width: calc(100% / 2 - 30px);
+ }
 }
