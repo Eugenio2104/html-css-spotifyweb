@@ -29,7 +29,6 @@ header{
 
 main{
   height: calc(100vh - 80px);
-  overflow-y: auto;
   background-color: #141922;
   display: flex;
 }
@@ -77,8 +76,9 @@ footer{
 }
 
 
-section{
+main > section{
   width: calc(100% - 200px);
+  overflow-y: auto;
 }
 
 .top-list {
@@ -135,4 +135,8 @@ section{
 
 .playlist ul li a:hover{
   border-bottom: 2px solid #B2FF2F;
+}
+
+.crea-playlist ul{
+  overflow-y: auto;
 }
