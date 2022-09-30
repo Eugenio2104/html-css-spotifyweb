@@ -107,6 +107,8 @@ main > section{
 .top-list ul li a:hover{
   color: #ffffff;
   border-bottom: 2px solid #B2FF2F;
+
+
 }
 
 
@@ -117,6 +119,37 @@ main > section{
 .box {
   width: calc(100% / 6);
   margin: 15px;
+}
+
+.box .song-box{
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.song-box .overlay{
+  width: 101%;
+  height: 101%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+}
+
+.song-box .overlay i{
+  align-self: center;
+  color: white;
+}
+
+.song-box:hover  .overlay{
+  display: flex;
+  justify-content: center;
+}
+
+.song-box .overlay{
+  font-size: 3rem;
 }
 
 .playlist ul, h3{
@@ -134,7 +167,7 @@ main > section{
 }
 
 .playlist ul li a:hover{
-  border-bottom: 2px solid #B2FF2F;
+  border-left: 2px solid #B2FF2F;
 }
 
 .crea-playlist ul{
