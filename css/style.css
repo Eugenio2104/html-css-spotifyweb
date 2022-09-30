@@ -175,24 +175,48 @@ main > section{
 }
 
 .crea-playlist ul{
-  height: calc(100vh - 350px);
+  height: calc(100vh - 400px);
   overflow-y: auto;
 }
 
+/*footer*/
+footer img{
+  width: 40px;
+  height: 40px;
+  margin: 20px 10px;
+}
+
+footer .col{
+  display: flex;
+  flex-direction: column;
+}
+
+footer .col-icon{
+  display: flex;
+}
 
 /*media query*/
 
 @media screen and (max-width:768px) {
+  .top-list ul{
+    flex-wrap: wrap;
+  }
    .box{
     width: calc(100% / 4 - 30px);
   }
+
 }
 
 
 
 
 @media screen and (max-width:480px) {
+  
+  .top-list ul{
+   flex-wrap: wrap;
+  }
   .box{
    width: calc(100% / 2 - 30px);
- }
-}
+  }
+
+  }
