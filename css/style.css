@@ -31,6 +31,7 @@ main{
   height: calc(100vh - 80px);
   background-color: #141922;
   display: flex;
+  color: #7C7E83;
 }
 
 
@@ -55,8 +56,18 @@ main .parte-sinistra{
 
 footer{
   height: 80px;
+  width: 100VW;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   background-color: #282828;
-  color: white;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+  justify-content: space-between;
+  z-index: 2;
 }
 
 .parte-sinistra img{
@@ -123,6 +134,11 @@ main > section{
 .box {
   width: calc(100% / 6 - 30px);
   margin: 15px;
+  text-align: center;
+}
+
+.box .border-r img{
+  border-radius: 50%;
 }
 
 .box .song-box{
@@ -147,7 +163,7 @@ main > section{
   color: white;
 }
 
-.song-box:hover  .overlay{
+.song-box:hover .overlay{
   display: flex;
   justify-content: center;
 }
@@ -180,32 +196,95 @@ main > section{
 }
 
 /*footer*/
-footer img{
-  width: 40px;
-  height: 40px;
-  margin: 20px 10px;
-}
-
-footer .col{
+footer div.container-flex{
   display: flex;
-  flex-direction: column;
+  height: 100%;
+  width: calc(100%/4 - 10px); 
+  flex-basis: 230px; 
+  padding-left: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-grow: 1; 
+  max-width: 25%;
+}
+footer div.container-flex img{
+  max-height: 60px;
 }
 
-footer .col-icon{
+footer div.container-flex span,
+footer div.container-flex p{
+  margin-left: 10px;
+}
+
+.col-icon{
+  margin-left: 30px;
+}
+
+footer div.container-flex-center{
   display: flex;
+  flex-direction:column;
+  height: 100%;
+  width: 50%;
 }
 
+footer div.container-flex-center .flex-cen-top{
+  display: flex;
+  height: 75%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+footer div.container-flex-center .flex-cen-top a i{
+  color: #ffffff;
+}
+
+footer div.container-flex-center .flex-cen-bot{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+footer div.container-flex-center .flex-cen-bot input{
+  width: 50%;
+}
+
+footer div.container-flex-end{
+  display: flex;
+  height: 100%;
+  margin-right: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+  max-width: 25%;
+}
+
+footer div.container-flex-end i,
+footer div.container-flex-end input,
+footer div.container-flex-center i{
+  margin: 9px;
+}
+
+.container-flex-end a i{
+  color: #ffffff;
+}
 /*media query*/
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:768px) { 
   .top-list ul{
     flex-wrap: wrap;
   }
    .box{
     width: calc(100% / 4 - 30px);
   }
+    footer div.container-flex-center .flex-cen-bot{
+      width: 60%;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+  }
 
-}
 
 
 
